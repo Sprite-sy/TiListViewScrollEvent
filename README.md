@@ -1,3 +1,18 @@
+
+desc
+================
+    1 at the current SDK(3.2.2), the scroll/scrollend event is not supported for listview. 
+    2 but considering the implement of tableview and listview at native platform, same control is applied. so it is simple to add scoll/scrollend event support for listview using the code form tableview (copy&paste).
+    
+usage
+================
+    1 backup the TiUIListView.m in sdk dir and replace it using this modified verison. 
+    2 only test using SDK 3.2.2
+    3 the file position under mac is ~/Library/Application Support/Titanium/mobilesdk/osx/3.2.2.GA/iphone/Classes
+
+
+
+
 说明
 ================
     1 在当前的SDK版本(3.2.2)里, listview还不支持scroll/scrollend事件(相信后续会添加),带来了一些不便. 官方提供的setMarker比较弱,很多功能不能实现.
